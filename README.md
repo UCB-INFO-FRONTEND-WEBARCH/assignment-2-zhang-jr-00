@@ -1,3 +1,27 @@
+# Results
+
+## Application Screenshots
+
+### Responsive Desigm
+
+![Screenshot 1](1.png)
+
+![Screenshot 2](2.png)
+
+### Active/Completed Filter
+
+![Screenshot 3](3.png)
+
+![Screenshot 4](4.png)
+
+### Deleting Tasks
+
+![Screenshot 5](5.png)
+
+![Screenshot 6](6.png)
+
+---
+
 # Assignment 2: React Task Manager
 ## INFO 153A/253A Front-End Web Architecture - Fall 2025
 
@@ -6,19 +30,7 @@
 
 ---
 
-## Results
 
-### Application Screenshots
-
-![Screenshot 1](1.png)
-
-![Screenshot 2](2.png)
-
-![Screenshot 3](3.png)
-
-![Screenshot 4](4.png)
-
----
 
 ## Overview
 
