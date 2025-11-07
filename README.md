@@ -2,7 +2,7 @@
 
 ## Application Screenshots
 
-### Responsive Desigm
+### Responsive Design
 
 ![Screenshot 1](1.png)
 
