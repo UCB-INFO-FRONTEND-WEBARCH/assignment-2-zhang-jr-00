@@ -1,0 +1,327 @@
+/* Base styles from Assignment 1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* App container */
+.app {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Header */
+.main-header {
+    background-color: #dc4c3e;
+    color: #ffffff;
+    padding: 15px 15px 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-icon,
+.check-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 50px;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.quick-find {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 8px 12px 8px 40px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+}
+
+.quick-find::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.quick-find:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.task-counter {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Container (flexbox layout) */
+.container {
+    display: flex;
+    min-height: calc(100vh - 52px);
+}
+
+/* Navigation sidebar */
+.sidebar {
+    background-color: #fafafa;
+    width: 300px;
+    padding: 20px 30px;
+    flex-shrink: 0;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: #ffffff;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.nav-label {
+    flex-grow: 1;
+    color: #000000;
+}
+
+.task-count {
+    color: #7e7d79;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 30px 40px;
+    background-color: #ffffff;
+}
+
+.main-content h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Task Form - New for React */
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.task-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.task-input:focus {
+    outline: none;
+    border-color: #dc4c3e;
+}
+
+.add-task-btn {
+    padding: 10px 20px;
+    background-color: #dc4c3e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-task-btn:hover {
+    background-color: #c73d2f;
+}
+
+.add-task-btn:active {
+    transform: scale(0.98);
+}
+
+/* Filter Buttons - New for React */
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.filter-btn.active {
+    background-color: #dc4c3e;
+    color: #ffffff;
+}
+
+/* Task List */
+.task-list {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 15px;
+}
+
+/* Circular checkbox styling */
+.task-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d1d1d1;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.task-checkbox:hover {
+    border-color: #dc4c3e;
+}
+
+.task-checkbox:checked {
+    background-color: #dc4c3e;
+    border-color: #dc4c3e;
+    position: relative;
+}
+
+.task-checkbox:checked::after {
+    content: '✓';
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+
+.task-item label {
+    cursor: pointer;
+    flex: 1;
+    color: #000000;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+/* Completed task styling */
+.task-item label.completed {
+    text-decoration: line-through;
+    color: #999999;
+    opacity: 0.6;
+}
+
+/* Delete Button - New for React */
+.delete-btn {
+    background: none;
+    border: none;
+    color: #999999;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.task-item:hover .delete-btn {
+    opacity: 1;
+}
+
+.delete-btn:hover {
+    color: #dc4c3e;
+}
+
+/* Empty State - New for React */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #999999;
+}
+
+.empty-state p {
+    font-size: 16px;
+}
+
+/* Responsive styles */
+
+/* Small screens (480px and below) - Hide sidebar */
+@media (max-width: 480px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .main-content {
+        padding: 20px 15px;
+    }
+    
+    .task-form {
+        flex-direction: column;
+    }
+    
+    .filter-buttons {
+        flex-wrap: wrap;
+    }
+}

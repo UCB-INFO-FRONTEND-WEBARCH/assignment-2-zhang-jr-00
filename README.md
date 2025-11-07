@@ -6,6 +6,20 @@
 
 ---
 
+## Results
+
+### Application Screenshots
+
+![Screenshot 1](1.png)
+
+![Screenshot 2](2.png)
+
+![Screenshot 3](3.png)
+
+![Screenshot 4](4.png)
+
+---
+
 ## Overview
 
 Convert your Assignment 1 Task Manager from HTML/CSS to a fully interactive React application. This version focuses on core React concepts without overwhelming complexity.
